@@ -12,7 +12,7 @@ title: Home
 
     {% for service in services %}
     <section class="service-section" data-service="{{ service }}">
-        <h2 class="service-title">{{ service | capitalize }}</h2>
+        <h2 class="service-title">{{ service | upcase }}</h2>
 
         <div class="contractors-grid">
             {% assign contractors_in_service = site.data.contractors | where_exp: "contractor", "contractor.services
