@@ -4,7 +4,7 @@
 #
 #- name: "Contractor Name"
 #  contact: "email@example.com"
-#  phone: "555-0000"
+#  phone: "01414 123456"
 #  website: "https://example.com"  
 #  services:
 #    - service1
@@ -25,7 +25,7 @@
 # === G
 - name: "Grant Wiffen"
   contact: ""
-  phone: "07555170763"
+  phone: "07555 170763"
   website: ""
   services:
     - electrical
@@ -40,7 +40,7 @@
 # === L
 - name: "Les Plumbing & Heating"
   contact: ""
-  phone: "07742772050"
+  phone: "07742 772050"
   website: ""
   services:
     - heating
@@ -53,7 +53,7 @@
 - name: "MS Ventilation"
   contact: "info@msventilation.co.uk"
   phone: 
-    - "0141 4112000"
+    - "01414 112000"
     - "01505 550055"
   website: "https://msventilation.co.uk/"
   services:
