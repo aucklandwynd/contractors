@@ -9,6 +9,7 @@ theme: minima
 
 # Exclude from processing
 exclude:
+  - developer.md
   - README.md
   - Gemfile
   - Gemfile.lock
