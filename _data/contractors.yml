@@ -5,13 +5,15 @@
 #- name: "Contractor Name"
 #  contact: "email@example.com"
 #  phone: "555-0000"
-#  website: "https://example.com"  # Leave empty ("") if no website
+#  website: "https://example.com"  
 #  services:
 #    - service1
 #    - service2
 #  recommended_by:
 #    - "Person Name"
 #  notes: "Any additional notes"
+#
+# If a certain piece of information is not available, leave it empty ("")
 
 # === A
 # === B
