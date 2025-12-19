@@ -46,7 +46,7 @@ title: Home
 
                     <p><strong>👥 Recommended by:</strong> {{ contractor.recommended_by | join: ", " }}</p>
 
-                    {% if contractor.notes %}
+                    {% if contractor.notes != "" %}
                     <p class="notes"><strong>📝 Notes:</strong> {{ contractor.notes }}</p>
                     {% endif %}
                 </div>
