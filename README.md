@@ -39,12 +39,12 @@ Press **Edit this file** button, the pencil-icon button on the right of the scre
 Current services include:
 - electrical
 - handyman
+- heating
+- hvac
 - joinery
 - landscaping
 - painting
 - plumbing
-- heating
-- mvhr
 
 Feel free to add new service categories as needed, editing the `README.md` file to capture those here.
 
