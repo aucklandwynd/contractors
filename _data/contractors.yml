@@ -54,6 +54,15 @@
 # === O
 # === P
 # === Q
+- name: "Quality Electrics Ltd."
+  contact: "qualityelectricsglasgow@gmail.com"
+  phone: "07411 180954"
+  website: "https://qualityelectrics.co.uk/"
+  services:
+    - electrical
+  recommended_by:
+    - "Daniela"
+  notes: ""
 # === R
 # === S
 # === T
