@@ -1,0 +1,62 @@
+# Contractor Data
+# 
+# Use the following template or an existing entry to add a new contractor:
+#
+#- name: "Contractor Name"
+#  contact: "email@example.com"
+#  phone: "555-0000"
+#  website: "https://example.com"  # Leave empty ("") if no website
+#  services:
+#    - service1
+#    - service2
+#  recommended_by:
+#    - "Person Name"
+#  notes: "Any additional notes"
+
+# === A
+# === B
+# === C
+# === D
+# === E
+# === F
+# === G
+- name: "Grant Wiffen"
+  contact: ""
+  phone: "07555170763"
+  website: ""
+  services:
+    - electrical
+    - handyman
+  recommended_by:
+    - "Maureen"
+  notes: ""
+# === H
+# === I
+# === J
+# === K
+# === L
+- name: "Les Plumbing & Heating"
+  contact: ""
+  phone: "07742772050"
+  website: ""
+  services:
+    - heating
+    - plumbing
+  recommended_by:
+    - "Andy"
+    - "Nadine"
+  notes: ""
+# === M
+# === N
+# === O
+# === P
+# === Q
+# === R
+# === S
+# === T
+# === U
+# === V
+# === W
+# === X
+# === Y
+# === Z
