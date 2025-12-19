@@ -2,7 +2,7 @@
 A community-curated directory of recommended contractors, organized by service type. 
 
 ## Adding New Contractors
-To add a new contractor, edit the `data/contractors.yml` file and add a new entry.
+To add a new contractor, edit the `_data/contractors.yml` file and add a new entry.
 
 ### 1. Create a New Git Branch
 Navigate to https://github.com/aucklandwynd/contractors/branches and select **New branch**. Enter a branch name following the pattern `contractors/new-contractor-name` where `new-contractor-name` is the name of the contractor being added. 
@@ -16,7 +16,7 @@ Return to the repository summary page, https://github.com/aucklandwynd/contracto
 
 You should now be at `https://github.com/aucklandwynd/contractors/tree/contractors/new-contractor-name`.
 
-Navigate to the `data` directory and then select `contractors.yml`. 
+Navigate to the `_data` directory and then select `contractors.yml`. 
 
 Press **Edit this file** button, the pencil-icon button on the right of the screen, and add the contractor's details. The contractors shoulds be listed alphabetically.
 
