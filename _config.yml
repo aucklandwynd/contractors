@@ -1,6 +1,6 @@
 title: Contractor Directory
 description: A curated list of recommended contractors.
-baseurl: "" # Leave empty if using username.github.io, or "/repo-name" for project pages
+baseurl: "/contractors"
 url: "" # Will be set by GitHub Pages automatically
 
 # Build settings
