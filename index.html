@@ -3,17 +3,9 @@ layout: default
 title: Home
 ---
 
-<hr>
-
-<div class="intro">
-    <p><strong>Total Contractors:</strong> {{ site.data.contractors | size }}</p>
-</div>
-
 <div class="search-box">
     <input type="text" id="searchInput" placeholder="Search contractors or services..." onkeyup="filterContractors()">
 </div>
-
-<hr>
 
 <div id="contractorList">
     {% assign services = site.data.contractors | map: "services" | flatten | uniq | sort %}
@@ -62,7 +54,6 @@ title: Home
             {% endfor %}
         </div>
     </section>
-    <hr>
     {% endfor %}
 </div>
 
