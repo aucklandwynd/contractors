@@ -30,7 +30,9 @@ title: Home
                     {% endif %}
 
                     {% if contractor.phone != "" %}
-                    <p><strong>📞 Phone:</strong> <a href="tel:{{ contractor.phone }}">{{ contractor.phone }}</a></p>
+                    {% for number in contractor.phone %}
+                    <p><strong>📞 Phone:</strong> <a href="tel:{{ number }}">{{ number }}</a></p>
+                    {% endfor %}
                     {% endif %}
 
                     {% if contractor.website != "" %}
