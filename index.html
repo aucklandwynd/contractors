@@ -30,9 +30,14 @@ title: Home
                 <h3>{{ contractor.name }}</h3>
 
                 <div class="contractor-details">
+                    {% if contractor.contact != "" %}
                     <p><strong>📧 Email:</strong> <a href="mailto:{{ contractor.contact }}">{{ contractor.contact }}</a>
                     </p>
+                    {% endif %}
+                    
+                    {% if contractor.phone != "" %}
                     <p><strong>📞 Phone:</strong> <a href="tel:{{ contractor.phone }}">{{ contractor.phone }}</a></p>
+                    {% endif %}
 
                     {% if contractor.website != "" %}
                     <p><strong>🌐 Website:</strong> <a href="{{ contractor.website }}" target="_blank"
