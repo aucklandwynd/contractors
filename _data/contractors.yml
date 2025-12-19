@@ -1,0 +1,85 @@
+# Contractor Data
+# 
+# Use the following template or an existing entry to add a new contractor:
+#
+#- name: "Contractor Name"
+#  contact: "email@example.com"
+#  phone: "01414 123456"
+#  website: "https://example.com"  
+#  services:
+#    - service1
+#    - service2
+#  recommended_by:
+#    - "Person Name"
+#  notes: "Any additional notes"
+#
+# If a certain piece of information is not available, leave it empty (""). The list of existing 
+# service names can be found in README.md
+
+# === A
+# === B
+# === C
+# === D
+# === E
+# === F
+# === G
+- name: "Grant Wiffen"
+  contact: ""
+  phone: "07555 170763"
+  website: ""
+  services:
+    - electrical
+    - handyman
+  recommended_by:
+    - "Maureen"
+  notes: ""
+# === H
+# === I
+# === J
+# === K
+# === L
+- name: "Les Plumbing & Heating"
+  contact: ""
+  phone: "07742 772050"
+  website: ""
+  services:
+    - heating
+    - plumbing
+  recommended_by:
+    - "Andy"
+    - "Nadine"
+  notes: ""
+# === M
+- name: "MS Ventilation"
+  contact: "info@msventilation.co.uk"
+  phone: 
+    - "01414 112000"
+    - "01505 550055"
+  website: "https://msventilation.co.uk/"
+  services:
+    - hvac
+  recommended_by:
+    - "Heather"
+  notes: "MS Ventilation is a trading name of MS All Trades Limited."
+# === N
+# === O
+# === P
+# === Q
+- name: "Quality Electrics Ltd."
+  contact: "qualityelectricsglasgow@gmail.com"
+  phone: "07411 180954"
+  website: "https://qualityelectrics.co.uk/"
+  services:
+    - electrical
+  recommended_by:
+    - "Daniela"
+  notes: ""
+# === R
+# === S
+# === T
+# === U
+# === V
+# === W
+# === X
+# === Y
+# === Z

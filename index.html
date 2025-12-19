@@ -1,0 +1,89 @@
+---
+layout: default
+title: Home
+---
+
+<div class="search-box">
+    <input type="text" id="searchInput" placeholder="Search contractors or services..." onkeyup="filterContractors()">
+</div>
+
+<div id="contractorList">
+    {% assign services = site.data.contractors | map: "services" | flatten | uniq | sort %}
+
+    {% for service in services %}
+    <section class="service-section" data-service="{{ service }}">
+        <h2 class="service-title">{{ service | upcase }}</h2>
+
+        <div class="contractors-grid">
+            {% assign contractors_in_service = site.data.contractors | where_exp: "contractor", "contractor.services
+            contains service" | sort: "name" %}
+
+            {% for contractor in contractors_in_service %}
+            <div class="contractor-card" data-name="{{ contractor.name | downcase }}"
+                data-services="{{ contractor.services | join: ' ' | downcase }}">
+                <h3>{{ contractor.name }}</h3>
+
+                <div class="contractor-details">
+                    {% if contractor.contact != "" %}
+                    <p><strong>📧 Email:</strong> <a href="mailto:{{ contractor.contact }}">{{ contractor.contact }}</a>
+                    </p>
+                    {% endif %}
+
+                    {% if contractor.phone != "" %}
+                    {% for number in contractor.phone %}
+                    <p><strong>📞 Phone:</strong> <a href="tel:{{ number }}">{{ number }}</a></p>
+                    {% endfor %}
+                    {% endif %}
+
+                    {% if contractor.website != "" %}
+                    <p><strong>🌐 Website:</strong> <a href="{{ contractor.website }}" target="_blank"
+                            rel="noopener">{{ contractor.website }}</a></p>
+                    {% endif %}
+
+                    <p><strong>🛠️ Services:</strong>
+                        {% for svc in contractor.services %}
+                        <span class="service-tag">{{ svc }}</span>{% unless forloop.last %}, {% endunless %}
+                        {% endfor %}
+                    </p>
+
+                    <p><strong>👥 Recommended by:</strong> {{ contractor.recommended_by | join: ", " }}</p>
+
+                    {% if contractor.notes != "" %}
+                    <p class="notes"><strong>📝 Notes:</strong> {{ contractor.notes }}</p>
+                    {% endif %}
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </section>
+    {% endfor %}
+</div>
+
+<script>
+    function filterContractors() {
+        const input = document.getElementById('searchInput');
+        const filter = input.value.toLowerCase();
+        const sections = document.querySelectorAll('.service-section');
+
+        sections.forEach(section => {
+            const cards = section.querySelectorAll('.contractor-card');
+            let visibleCards = 0;
+
+            cards.forEach(card => {
+                const name = card.getAttribute('data-name');
+                const services = card.getAttribute('data-services');
+                const textContent = card.textContent.toLowerCase();
+
+                if (name.includes(filter) || services.includes(filter) || textContent.includes(filter)) {
+                    card.style.display = '';
+                    visibleCards++;
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+
+            // Hide section if no visible cards
+            section.style.display = visibleCards > 0 ? '' : 'none';
+        });
+    }
+</script>
