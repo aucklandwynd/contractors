@@ -13,7 +13,8 @@
 #    - "Person Name"
 #  notes: "Any additional notes"
 #
-# If a certain piece of information is not available, leave it empty ("")
+# If a certain piece of information is not available, leave it empty (""). The list of existing 
+# service names can be found in README.md
 
 # === A
 # === B
