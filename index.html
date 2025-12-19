@@ -3,15 +3,17 @@ layout: default
 title: Home
 ---
 
+<hr>
+
 <div class="intro">
-    <p>Welcome to our community-curated contractor directory. All contractors listed here have been personally
-        recommended by members of our group.</p>
     <p><strong>Total Contractors:</strong> {{ site.data.contractors | size }}</p>
 </div>
 
 <div class="search-box">
     <input type="text" id="searchInput" placeholder="Search contractors or services..." onkeyup="filterContractors()">
 </div>
+
+<hr>
 
 <div id="contractorList">
     {% assign services = site.data.contractors | map: "services" | flatten | uniq | sort %}
@@ -34,7 +36,7 @@ title: Home
                     <p><strong>📧 Email:</strong> <a href="mailto:{{ contractor.contact }}">{{ contractor.contact }}</a>
                     </p>
                     {% endif %}
-                    
+
                     {% if contractor.phone != "" %}
                     <p><strong>📞 Phone:</strong> <a href="tel:{{ contractor.phone }}">{{ contractor.phone }}</a></p>
                     {% endif %}
@@ -60,6 +62,7 @@ title: Home
             {% endfor %}
         </div>
     </section>
+    <hr>
     {% endfor %}
 </div>
 
