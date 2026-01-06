@@ -20,6 +20,16 @@
 # === B
 # === C
 # === D
+- name: "Danny McCabe"
+  contact: ""
+  phone: "07714 035969"
+  website: ""
+  services:
+    - painting
+  recommended_by:
+    - "Andy"
+    - "Nadine"
+  notes: ""
 # === E
 # === F
 # === G
