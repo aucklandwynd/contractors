@@ -9,7 +9,11 @@ gem install bundler jekyll
 ```
 
 3. Create a Gemfile in the project root:
+```bash
+touch Gemfile
+```
 ```ruby
+# ./Gemfile
 source "https://rubygems.org"
 gem "github-pages", group: :jekyll_plugins
 ```
@@ -24,7 +28,7 @@ bundle install
 bundle exec jekyll serve
 ```
 
-6. Visit `http://localhost:4000` in your browser
+6. Visit `http://localhost:4000/contractors/` in your browser
 
 ## Prerequisites
 * bundler
