@@ -38,6 +38,7 @@ Press **Edit this file** button, the pencil-icon button on the right of the scre
 #### Available Service Categories
 Current services include:
 - electrical
+- furniture wrapping
 - handyman
 - heating
 - hvac

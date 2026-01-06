@@ -74,6 +74,16 @@
 # === N
 # === O
 # === P
+- name: "Pristine Kitchen Wraps"
+  contact: "info@pkwraps.co.uk"
+  phone: "07801 169242"
+  website: "https://pkwraps.co.uk/"
+  services:
+    - furniture wrapping
+  recommended_by:
+    - "Andy"
+    - "James"
+  notes: ""
 # === Q
 - name: "Quality Electrics Ltd."
   contact: "qualityelectricsglasgow@gmail.com"
